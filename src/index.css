@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* src/index.css */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+  .nav-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #7e22ce; /* Tailwind's purple-700 */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-underline:hover::after {
+    width: 100%;
+  }
+  
