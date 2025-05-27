@@ -1,5 +1,5 @@
 [build]
-  # Install & build only inside your React/Vite folder
+  # 1) install in welcomeweb, 2) build in welcomeweb
   command = "npm install --prefix welcomeweb && npm run build --prefix welcomeweb"
-  # Publish the output from that folder
+  # pick up the production bundle
   publish = "welcomeweb/dist"
