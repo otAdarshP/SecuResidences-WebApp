@@ -1,7 +1,5 @@
 [build]
-  base   = "welcomeweb"       # ← CD into this folder first
-  command = "npm install && npm run build"
-  publish = "dist"            # ← in that folder, this will produce welcomeweb/dist
-
-[dev]
-  command = "npm start"
+  # Install & build only inside your React/Vite folder
+  command = "npm install --prefix welcomeweb && npm run build --prefix welcomeweb"
+  # Publish the output from that folder
+  publish = "welcomeweb/dist"
