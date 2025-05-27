@@ -1,5 +1,0 @@
-[build]
-  # 1) install in welcomeweb, 2) build in welcomeweb
-  command = "npm install --prefix welcomeweb && npm run build --prefix welcomeweb"
-  # pick up the production bundle
-  publish = "welcomeweb/dist"
